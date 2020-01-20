@@ -2,35 +2,26 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Descrição para SEO [aguardando]" />
     <meta name="author" content="Startup Saudavel" />
     <title>Startup Saudável</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/estilo-central.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/estilo-central.css?v1.0.2" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon"/>
+  	<link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon"/>
   </head>
   <body>
     <!--- Menu topo --->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarBlog"
-          aria-controls="navbarBlog"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBlog" aria-controls="navbarBlog" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="flex-row-reverse collapse navbar-collapse" id="navbarBlog">
-          <ul class="nav justify-content-end">
+          <ul class="nav navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Menu 1</a>
             </li>
@@ -53,10 +44,13 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active ">
-            <img src="assets/img1.jpeg" class="d-block w-100" alt="..." />
+            <img src="assets/carousel/banner-1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item ">
-            <img src="assets/img2.jpg" class="d-block w-100" alt="..." />
+            <img src="assets/carousel/img2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item ">
+            <img src="assets/carousel/img3.png" class="d-block w-100" alt="..." />
           </div>
         </div>
         <a
@@ -83,16 +77,16 @@
     <div class="container" id="noticias-div1">
       <div class="row justify-content-md-center">
         <div class="col-md-5">
-          <div class="p-4 box-newsTop cgrey">
-            Imagem 1
+          <div class="p-0 box-newsTop">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
         </div>
         <div class="col-md-5">
-          <div class="p-4 box-newsTop cgrey">
-            Imagem 2
+          <div class="p-0 box-newsTop cgrey">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Phasellus dapibus turpis in luctus finibus.
@@ -104,16 +98,16 @@
     <div class="container" id="noticias-div2">
       <div class="row justify-content-md-center">
         <div class="col-md-4 mb-4">
-          <div class="p-4 box-newsTop">
-            Imagem 1
+          <div class="p-0 box-newsTop">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="p-4 box-newsTop">
-            Imagem 2
+          <div class="p-0 box-newsTop">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Phasellus dapibus turpis in luctus finibus.
@@ -122,16 +116,16 @@
       </div>
       <div class="row justify-content-md-center nr2">
         <div class="col-md-4 mb-4">
-          <div class="p-4 box-newsTop">
-            Imagem 3
+          <div class="p-0 box-newsTop">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="p-4 box-newsTop">
-            Imagem 4
+          <div class="p-0 box-newsTop">
+            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="title-box">
             Phasellus dapibus turpis in luctus finibus.
@@ -147,12 +141,12 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-md-5 mb-4">
-            <div class="p-4">
+            <div class="newsletter-form-div">
               <h2>Fique por dentro</h2>
               <p>Recebe nossos melhores conteúdo</p>
               <form
                 action="https://smtl.gama.academy/leads/3d843760-39f4-11ea-a319-e90cfbc180ef"
-                method="post"
+                method="post" class="formulario-envio"
               >
                 <ul class="flex-outer">
                   <li>
@@ -163,6 +157,7 @@
                       title="Digite o seu nome completo"
                       required
                       placeholder="Nome"
+                      class="w-75"
                     />
                   </li>
                   <li>
@@ -172,6 +167,7 @@
                       title="digite um e-mail válido"
                       required
                       placeholder="exemplo@exemplo.com"
+                      class="w-75"
                     />
                   </li>
                   <input name="redirectTo" type="hidden" value="" />

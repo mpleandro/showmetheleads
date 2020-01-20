@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika&display=swap');
+
 .box-newsTop {
   background: #9d9d9d;
-  height: 300px;
+  min-height: 200px;
+  max-height: auto;
 }
 .title-box {
-  font-size: 20px;
+  font-family: 'Signika', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  line-height: 43px;
 }
 .nr2 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .logo-footer {
   padding: 50px 0px;
@@ -22,15 +31,33 @@
   margin-top: 20px;
   height: 280px;
 }
+.newsletter-form-div{
+  padding-top:30px;
+}
+.newsletter-form-div h2{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  margin:0px;
+}
+.newsletter-form-div p{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+#newsletter-div .formulario-envio input{
+  height:50px;
+}
 /* IDS PRINCIPAIS DAS SEÇÕES */
 #carrousel-div {
   background: #9d9d9d;
-  height: 500px;
-  margin-top: 10px;
+  max-height: 400px;
   padding: 0;
 }
 #carrousel-div img {
-  max-height: 500px;
+  max-height: 400px;
 }
 #noticias-div1 {
   margin-top: 52px;

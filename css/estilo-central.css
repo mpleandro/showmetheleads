@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika:700&display=swap');
 
 .box-newsTop {
   background: #9d9d9d;
@@ -13,6 +13,10 @@
   text-align: center;
   letter-spacing: -0.015em;
   line-height: 43px;
+}
+#noticias-div2 .title-box{
+  font-size:24px;
+  line-height:36px;
 }
 .nr2 {
   margin-top: 30px;
@@ -37,7 +41,7 @@
 .newsletter-form-div h2{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 24px;
   margin:0px;
 }

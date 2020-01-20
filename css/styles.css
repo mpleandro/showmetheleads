@@ -26,10 +26,7 @@ div.form {
   align-items: center;
   flex-direction: column;
 }
-form {
-  border: 1px solid #ccc;
-  padding: 20px 30px;
-}
+
 .flex-outer li {
   display: flex;
   flex-wrap: wrap;
@@ -47,20 +44,25 @@ input {
   align-items: center;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 320px;
 }
 ::placeholder {
-  text-align: center;
+  text-align: left;
 }
 
 input[type="submit"] {
-  height: 30px;
-  width: 80px;
+  height: 35px;
+  width: 100px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  flex: auto;
+
   color: #fff;
-  background: rgb(102, 102, 190);
+  background: #222;
+  transition: background 0.2s;
+}
+input[type="submit"]:hover {
+  background: #ccc;
+  color: #222;
 }

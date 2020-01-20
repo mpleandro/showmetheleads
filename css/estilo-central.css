@@ -1,36 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika:700&display=swap');
+
 .box-newsTop {
   background: #9d9d9d;
-  height: 300px;
+  min-height: 200px;
+  max-height: auto;
 }
 .title-box {
-  font-size: 20px;
+  font-family: 'Signika', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  line-height: 43px;
+}
+#noticias-div2 .title-box{
+  font-size:24px;
+  line-height:36px;
 }
 .nr2 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .logo-footer {
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 .social-footer {
   border-top: 1px solid #000;
 }
 .social-container {
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 .img-newsletter {
   background: #9d9d9d;
   margin-top: 20px;
   height: 280px;
 }
+.newsletter-form-div{
+  padding-top:30px;
+}
+.newsletter-form-div h2{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  margin:0px;
+}
+.newsletter-form-div p{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+#newsletter-div .formulario-envio input{
+  height:50px;
+}
 /* IDS PRINCIPAIS DAS SEÇÕES */
 #carrousel-div {
   background: #9d9d9d;
-  height: 500px;
-  margin-top: 10px;
+  max-height: 400px;
   padding: 0;
 }
 #carrousel-div img {
-  max-height: 500px;
+  max-height: 400px;
 }
 #noticias-div1 {
   margin-top: 52px;

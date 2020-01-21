@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika:700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Signika:700&display=swap");
 
 .box-newsTop {
   background: #9d9d9d;
@@ -6,17 +6,21 @@
   max-height: auto;
 }
 .title-box {
-  font-family: 'Signika', sans-serif;
+  font-family: "Signika", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
-  letter-spacing: -0.015em;
-  line-height: 43px;
+  line-height: normal;
+  color: #58585a;
 }
-#noticias-div2 .title-box{
-  font-size:24px;
-  line-height:36px;
+#noticias-div2 .title-box {
+  font-family: "Signika", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #58585a;
 }
 .nr2 {
   margin-top: 30px;
@@ -25,36 +29,54 @@
   padding: 30px 0px;
 }
 .social-footer {
-  border-top: 1px solid #000;
+  border-top: 1px solid #6483c3;
 }
 .social-container {
   padding: 30px 0px;
 }
+.social-container ul {
+  display: flex;
+  list-style: none;
+}
+.social-container ul li {
+  margin-right: 5px;
+}
+.social-container ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+.copyright {
+  color: #7696cf;
+}
 .img-newsletter {
-  background: #9d9d9d;
   margin-top: 20px;
   height: 280px;
 }
-.newsletter-form-div{
-  padding-top:30px;
+.newsletter-form-div {
+  padding-top: 30px;
 }
-.newsletter-form-div h2{
-  font-family: 'Open Sans', sans-serif;
+.newsletter-form-div h2 {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
-  margin:0px;
+  margin: 0px;
 }
-.newsletter-form-div p{
-  font-family: 'Open Sans', sans-serif;
+.newsletter-form-div p {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
 }
-#newsletter-div .formulario-envio input{
-  height:50px;
+#newsletter-div .formulario-envio input {
+  height: 50px;
 }
 /* IDS PRINCIPAIS DAS SEÇÕES */
+.bg-carrousel {
+  background: #4d65af;
+  padding-bottom: 48px;
+}
 #carrousel-div {
   background: #9d9d9d;
   max-height: 400px;
@@ -63,6 +85,10 @@
 #carrousel-div img {
   max-height: 400px;
 }
+div.content {
+  max-width: 100%;
+  background: #aadfe7;
+}
 #noticias-div1 {
   margin-top: 52px;
 }
@@ -70,9 +96,9 @@
   margin-top: 101px;
 }
 #footer-div {
-  background: #9d9d9d;
+  background: #4d65af;
 }
 #newsletter-div {
   margin-top: 20px;
-  background: #dfdfdf;
+  background: #64bc92;
 }

@@ -2,94 +2,135 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Descrição para SEO [aguardando]" />
     <meta name="author" content="Startup Saudavel" />
     <title>Startup Saudável</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/estilo-central.css?v1.0.4" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="icon" href="assets/icon.ico" type="image/x-icon"/>
-  	<link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon" />
   </head>
   <body>
     <!--- Menu topo --->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBlog" aria-controls="navbarBlog" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"
+          ><img src="assets/logo/LOGO.svg" alt="Startup Saudavel"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarBlog"
+          aria-controls="navbarBlog"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="flex-row-reverse collapse navbar-collapse" id="navbarBlog">
           <ul class="nav navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Menu 1</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Menu 2</a>
+              <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Menu 3</a>
+              <a class="nav-link " href="#">Inscreva-se</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--- CARROUSEL --->
-    <div class="container" id="carrousel-div">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active ">
-            <img src="assets/carousel/banner-1.jpg" class="d-block w-100" alt="..." />
+    <div class="bg-carrousel">
+      <div class="container" id="carrousel-div">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/banner-cuide-do-seu-futuro.jpg"
+                alt="Primeiro Slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/BANNER-TECNOLOGIA-E-SAUDE.jpg"
+                alt="Segundo Slide"
+              />
+            </div>
           </div>
-          <div class="carousel-item ">
-            <img src="assets/carousel/img2.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item ">
-            <img src="assets/carousel/img3.png" class="d-block w-100" alt="..." />
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
     <!--- NOTICIAS PRINCIPAIS--->
-    <div class="container" id="noticias-div1">
-      <div class="row justify-content-md-center">
-        <div class="col-md-5">
-          <div class="p-0 box-newsTop">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
+    <div class="content-news">
+      <div id="noticias-div1" class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-5">
+            <div class="p-0 box-newsTop">
+              <a href="noticia-padrao.html">
+                <img
+                  src="assets/news/yoga-para-aliviar-estresse.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </a>
+            </div>
+            <div class="title-box">
+              Yoga em 10 minutos para aliviar o estresse.
+            </div>
           </div>
-          <div class="title-box">
-            Título post 3, título post 3, título post 3, título post 3
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="p-0 box-newsTop cgrey">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="title-box">
-            Título post 4, título post 4, título post 4, título post 4
+          <div class="col-md-5">
+            <div class="p-0 box-newsTop cgrey">
+              <img
+                src="assets/news/empreendedores-que-faturam.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="title-box">
+              9 empreendedores que faturam com saúde e bem estar.
+            </div>
           </div>
         </div>
       </div>
@@ -99,36 +140,52 @@
       <div class="row justify-content-md-center">
         <div class="col-md-4 mb-4">
           <div class="p-0 box-newsTop">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
+            <img
+              src="assets/news/ginastica-melhora-desempenho.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="title-box">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Ginástica laboral ajuda na melhora do desempenho da equipe.
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="p-0 box-newsTop">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
+            <img
+              src="assets/news/saude-no-ambiente-de-trabalho.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="title-box">
-            Phasellus dapibus turpis in luctus finibus.
+            Saúde também deve ser pensada no ambiente de trabalho.
           </div>
         </div>
       </div>
       <div class="row justify-content-md-center nr2">
         <div class="col-md-4 mb-4">
           <div class="p-0 box-newsTop">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
+            <img
+              src="assets/news/beneficios-do-abacaxi.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="title-box">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Conheça os 15 benefícios do abacaxi para a saúde.
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="p-0 box-newsTop">
-            <img src="assets/news/noticia1.jpg" class="d-block w-100" alt="..." />
+            <img
+              src="assets/news/beneficios-da-corrida.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="title-box">
-            Phasellus dapibus turpis in luctus finibus.
+            Os benefícios da corrida em curto, médio e longo prazo.
           </div>
         </div>
       </div>
@@ -137,51 +194,58 @@
       </div>
     </div>
     <!--- NEWSLETTER  --->
-    <div class="container-fluid" id="newsletter-div">
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-5 mb-4">
-            <div class="newsletter-form-div">
-              <h2>Fique por dentro</h2>
-              <p>Recebe nossos melhores conteúdo</p>
-              <form
-                action="https://smtl.gama.academy/leads/3d843760-39f4-11ea-a319-e90cfbc180ef"
-                method="post" class="formulario-envio"
-              >
-                <ul class="flex-outer">
-                  <li>
-                    <input
-                      name="name"
-                      type="text"
-                      pattern="^\D{2,}\s[\D\s]{2,}$"
-                      title="Digite o seu nome completo"
-                      required
-                      placeholder="Nome"
-                      class="w-75"
-                    />
-                  </li>
-                  <li>
-                    <input
-                      name="email"
-                      type="email"
-                      title="digite um e-mail válido"
-                      required
-                      placeholder="exemplo@exemplo.com"
-                      class="w-75"
-                    />
-                  </li>
-                  <input name="redirectTo" type="hidden" value="" />
-                  <input name="debugMode" type="hidden" value="true" />
-                  <li>
-                    <input type="submit" value="Enviar" />
-                  </li>
-                </ul>
-              </form>
+    <div class="bg-form">
+      <div class="container-fluid" id="newsletter-div">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-5 mb-4">
+              <div class="newsletter-form-div">
+                <h2>Fique por dentro</h2>
+                <p>Receba nossos melhores conteúdo</p>
+                <form
+                  action="https://smtl.gama.academy/leads/3d843760-39f4-11ea-a319-e90cfbc180ef"
+                  method="post"
+                  class="formulario-envio"
+                >
+                  <ul class="flex-outer">
+                    <li>
+                      <input
+                        name="name"
+                        type="text"
+                        pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite o seu nome completo"
+                        required
+                        placeholder="Nome"
+                        class="w-75"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        name="email"
+                        type="email"
+                        title="digite um e-mail válido"
+                        required
+                        placeholder="exemplo@exemplo.com"
+                        class="w-75"
+                      />
+                    </li>
+                    <input name="redirectTo" type="hidden" value="" />
+                    <input name="debugMode" type="hidden" value="true" />
+                    <li>
+                      <input type="submit" value="Enviar" />
+                    </li>
+                  </ul>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="col-md-5 mb-4">
-            <div class="img-newsletter">
-              imagem relacionada
+            <div class="col-md-5 mb-4">
+              <div class="img-newsletter">
+                <img
+                  src="assets/imagem-form.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -191,19 +255,39 @@
     <div class="container-fluid" id="footer-div">
       <div class="d-flex justify-content-center">
         <div class="logo-footer">
-          LOGO
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/logo/LOGO.svg" alt="Startup Saudavel"
+          /></a>
         </div>
       </div>
       <div class="container">
         <div class="d-flex justify-content-center social-footer">
           <div class="social-container">
-            REDES SOCIAIS
+            <ul>
+              <li>
+                <a href=""
+                  ><img src="assets/social-media/facebook-icon.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/social-media/instagram-icon.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/social-media/linkedin-icon.png" alt=""
+                /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="d-flex justify-content-center pb-2">
-          Copyright © 2020 Startup Saudável. Todos direitos reservados.
+        <div class="d-flex justify-content-center pb-2 copyright">
+          <span class="copyright"
+            >Copyright © 2020 Startup Saudável. Todos direitos reservados.</span
+          >
         </div>
       </div>
     </div>

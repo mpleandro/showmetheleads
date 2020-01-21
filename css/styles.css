@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Signika:700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -14,19 +16,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  margin-top: 200px;
   text-align: center;
   color: #333;
   font-weight: bold;
   margin-bottom: 10px;
 }
+/* ESTILIZAÇAO DO FORM */
 div.form {
   display: flex;
 
   align-items: center;
   flex-direction: column;
 }
-
+div.newsletter-form-div h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+div.newsletter-form-div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+}
 .flex-outer li {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +53,7 @@ input {
   padding: 7px 20px;
   margin-bottom: 20px;
   display: flex;
+  font-family: "Open Sans", sans-serif;
   justify-content: center;
   align-items: center;
   background: #fff;
@@ -56,12 +70,28 @@ input[type="submit"] {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
+  font-family: "Open Sans", sans-serif;
   color: #fff;
-  background: #222;
+  background: #4d65af;
   transition: background 0.2s;
 }
 input[type="submit"]:hover {
-  background: #ccc;
-  color: #222;
+  background: #7697ce;
+}
+.carousel-indicators > li {
+  border-radius: 60%;
+  width: 8px;
+  height: 8px;
+}
+/* ESTILIZAÇÃO DO NAV */
+.nav {
+  margin-top: 10px;
+}
+.nav a {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+.bg-dark {
+  background-color: #4d65af !important;
 }

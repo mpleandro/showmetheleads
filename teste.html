@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Descrição para SEO [aguardando]" />
+    <meta name="author" content="Startup Saudavel" />
+    <title>Startup Saudável - Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilo-central.css?v1.0.4" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+<!-- HEADER AQUI -->
+<!--Conteiner do quizz -->
+
+      <p>
+        Sabemos que a realidade dentro das startups não é só piscina de bolinha e geladeira de cerveja. Empreender não é fácil e cada vez mais empreendedores tem enfrentado problemas como depressão, TDAH (transtorno do déficit de atenção com hiperatividade) e desenvolvendo a Bipolaridade. Todas doenças que têm uma relação com o estresse, como mostra um estudo feito em parceria entre a Universidade da California, Stanfort e Berkeley (veja o estudo na íntegra aqui). Por isso desenvolvemos essa pesquisa/teste para saber; como anda o nível de estresse dos startupeiros do brasil. São só 8 perguntas e o seu resultado já vai sair na hora. Mas se quiser ajudar ainda mais, compartilha esse teste com outros startupeiros. Ah, deixa seu email no final do teste. Na sexta, dia 24/01, te mandarmos o resultado geral dessa pesquisa
+      </p> 
+        <div id="quizzcontainer">
+          <h2 class="quizztitle">Título do quizz</h2>
+            <ul class="quizzoptions">
+                <li class="quizzanswer" value="1">Opção 1</li>
+                <li class="quizzanswer" value="2">Opção 2</li>
+                <li class="quizzanswer" value="3">Opção 3</li>
+                <li class="quizzanswer" value="4">Opção 4</li>
+            </ul>
+            <button onclick="getTotal();submitForm()">RESPOSTA</button>
+        </div>
+
+        <!-- FIM Conteiner do quizz -->
+        <!-- Formulário de cadastro -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2P6TMX"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="form" id="formTest">
+          <h1>Formulário</h1>
+          <form
+            action="https://smtl.gama.academy/leads/3d843760-39f4-11ea-a319-e90cfbc180ef"
+            method="post"
+          >
+            <ul class="flex-outer">
+              <li>
+                <input
+                  name="name"
+                  type="text"
+                  pattern="^\D{2,}\s[\D\s]{2,}$"
+                  title="Digite o seu nome completo"
+                  required
+                  placeholder="Digite o seu nome completo"
+                />
+              </li>
+              <li>
+                <input
+                  name="email"
+                  type="email"
+                  title="digite um e-mail válido"
+                  required
+                  placeholder="exemplo@exemplo.com"
+                />
+              </li>
+              <input name="redirectTo" type="hidden" value="" />
+              <input name="debugMode" type="hidden" value="true" />
+              <li>
+                <input type="submit" value="Enviar" />
+              </li>
+            </ul>
+          </form>
+        </div>
+        <!-- Formulário de cadastro -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+/* Armazena os valores das respostas */
+      var QuestionResults = [];
+/* Seleciona o item da lista */
+      var listItems = document.querySelectorAll("ul li");
+      /*var listItems = document.querySelectorAll("input[checkbox]").checked = true;*/
+
+/* Recebe o valor de acordo com o clique no item da lista */
+        listItems.forEach(function(item) {
+          item.onclick = function(e) {
+/* Armazena o valor no Array */
+          QuestionResults.push(this.value);
+          this.style.color = "#64BC92";
+          this.style.backgroundImage = "url('assets/checked.svg')";
+
+/* APAGAR */
+              console.log(QuestionResults)
+/* APAGAR */
+          }
+        });
+
+/* Soma os valores dos Arrays e zera os Arrays */
+        function getSum(total, num) {
+          return total + Math.round(num);
+        }
+        function getTotal(item) {
+          /* APAGAR */
+          console.log(QuestionResults.reduce(getSum, 0))
+          /* APAGAR */
+          QuestionResults.length = 0
+        }
+/*Ao submeter o formulário, apaga o container e exige o formulário*/
+        function submitForm() {
+          document.getElementById("quizzcontainer").style.display = "none"
+          document.getElementById("formTest").style.display = "block"
+        }
+        
+    </script>
+    <style>
+    #quizzcontainer {
+      align-content: center;
+      padding: 10px;
+      justify-content: space-around;
+
+    }
+    .quizzoptions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    input[type=checkbox]{
+      display: inline;
+    }
+    .quizzcheckbox {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border: solid 1px #c4c4c4;
+      margin-right: 10px;
+    }
+    .quizzcheckbox:hover {
+      background-color: #fff;
+    }
+    .quizzanswer {
+      background: #FFFFFF;
+      border: 0.5px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 5px;
+      cursor: pointer;
+      list-style: none;
+      padding: 5px 20px 5px 40px;
+      margin: 5px;
+      font-family: "Open Sans";
+      font-size: 18px;
+      line-height: 27px;
+      background-image: url("assets/checkbox.svg");
+      background-repeat: no-repeat;
+      background-position: 10px 7px;
+    }
+    .quizzanswer:hover{
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    }
+    #formTest {
+      display: none;
+    }
+    li input {
+      width: 90%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    </style>
+  </body>
+</html>
